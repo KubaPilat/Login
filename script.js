@@ -1,9 +1,10 @@
 function myFunction() {
-    let ocena = document.getElementById("numb").value;
-    let xlen = ocena.toString().length;
+    let mojeOceny = document.getElementById("numb").value;
+    let iloscOcen = mojeOceny.toString().length;
     
-    let wynik = (ocena*ocena)/xlen;
+    var oceny = mojeOceny.split(' ');
+    let wynik = (oceny*oceny)/iloscOcen;
     
-    document.getElementById("wynik").innerHTML = wynik;
-}
+    document.getElementById("oceny").innerHTML = wynik;
 
+}
